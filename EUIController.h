@@ -48,12 +48,9 @@ public:
     void onClick();
 
 
-    //void setNewWindow( std::string bckgrd, const std::string& text, float xw, float yw, sf::Event& event);
-
     bool press_check(sf::Event& event);
 
     void centerText(float radius, float x, float y) {
-        // Центрирование текста в круге
         sf::FloatRect textBounds = buttonText.getLocalBounds();
         buttonText.setOrigin(textBounds.width / 2, textBounds.height / 2);
         buttonText.setPosition(x + radius, y + radius); // Центрирование текста относительно центра круга

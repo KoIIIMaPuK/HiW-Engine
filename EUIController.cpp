@@ -7,12 +7,6 @@
 
 
 
-    // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-    //
-    // Общие функции
-    //
-    // 
-
 void EUIController::onClick() {
     std::cout << "Button clicked!" << std::endl;
 }
@@ -22,24 +16,6 @@ bool EUIController::press_check(sf::Event& event)
     return event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left && event.mouseButton.x > 640 && event.mouseButton.x < 840 && event.mouseButton.y> 400 && event.mouseButton.y < 600;
 }
 
-
-
-
-
-
-
-
-
-
-// 
-//
-// Общие функции
-//
-// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-//
-// Функции и конструкторы без цветов 
-//
-// 
 
 
 
@@ -119,35 +95,6 @@ void EUIController::update(sf::RenderWindow& window)
     }
 }
 
-// 
-//
-// Функции и конструкторы без цветов
-//
-// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-//
-// Функции и конструкторы с цветами
-//
-// 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 EUIController::EUIController(float text_size, float x, float y, float width, float height, std::string text, const sf::Color& button_color, const sf::Color& new_button_color, const sf::Color& text_color)
 {
@@ -210,7 +157,6 @@ void EUIController::update(sf::RenderWindow& window, const sf::Color& button_col
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
             onClick();
-            //std::cout << "Updating button state..." << std::endl;
         }
     }
     else
