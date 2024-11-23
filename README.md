@@ -21,7 +21,7 @@
 git clone https://github.com/KoIIIMaPuK/HiW-Engine.git
 
 ### 2. Установка зависимостей
-
+```
 Для работы с этим проектом потребуется библиотека SFML:
     - Скачайте SFML с официального сайта
     - Распакуйте архив в удобное для вас место
@@ -46,3 +46,4 @@ git clone https://github.com/KoIIIMaPuK/HiW-Engine.git
         sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-system-d.lib;
 
         10. После всего этого ВСЕ '.dll' файлы в SFML/bin (bin лежит там же, где и include) нужно перекинуть в проект (В данном репазитории они уже лежат, поэтому ничего из 10 пункта, в теории, делать не нужно)
+```
